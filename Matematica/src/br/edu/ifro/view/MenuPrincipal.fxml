@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="Calcular">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Ponto e Reta" />
-                  <MenuItem mnemonicParsing="false" text="Circunferencia" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Como Calcular" />
-          <Menu mnemonicParsing="false" text="Sair" />
-        </menus>
-      </MenuBar>
+      <ImageView fitHeight="495.0" fitWidth="731.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/lousa-matematica.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="422.0" layoutX="32.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
+      <Label layoutX="80.0" layoutY="30.0" prefHeight="60.0" prefWidth="574.0" text="POSIÇÕES ENTRE DUAS CIRCUNFERÊNCIAS " textAlignment="CENTER">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="369.0" fitWidth="668.0" layoutX="37.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/menu1.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="473.0" layoutY="383.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="71.0" text="Ca" />
    </children>
 </AnchorPane>
