@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.view.MenuPrincipalController">
    <children>
       <ImageView fitHeight="495.0" fitWidth="731.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -27,6 +27,51 @@
             <Image url="@../../../../img/menu1.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="473.0" layoutY="383.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="71.0" text="Ca" />
+      <Button fx:id="btnCalcular" layoutX="590.0" layoutY="372.0" mnemonicParsing="false" onAction="#calcular" prefHeight="30.0" prefWidth="81.0" text="Calcular">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnSair" layoutX="518.0" layoutY="372.0" mnemonicParsing="false" onAction="#sair" prefHeight="30.0" prefWidth="58.0" text="Sair">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="455.0" layoutY="228.0" text="Circunferência 1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="455.0" layoutY="296.0" text="Circunferência 2">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtXC1" layoutX="458.0" layoutY="258.0" prefHeight="25.0" prefWidth="38.0" />
+      <TextField fx:id="txxtYC1" layoutX="532.0" layoutY="258.0" prefHeight="25.0" prefWidth="38.0" />
+      <TextField fx:id="txtTC1" layoutX="605.0" layoutY="258.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="501.0" layoutY="258.0" prefHeight="25.0" prefWidth="17.0" text="X">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="576.0" layoutY="258.0" prefHeight="25.0" prefWidth="17.0" text="Y">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="576.0" layoutY="324.0" prefHeight="25.0" prefWidth="17.0" text="Y">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="501.0" layoutY="324.0" prefHeight="25.0" prefWidth="17.0" text="X">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTC2" layoutX="605.0" layoutY="324.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="txxtYC2" layoutX="532.0" layoutY="324.0" prefHeight="25.0" prefWidth="38.0" />
+      <TextField fx:id="txtXC2" layoutX="458.0" layoutY="324.0" prefHeight="25.0" prefWidth="38.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="141.0" layoutX="445.0" layoutY="220.0" stroke="BLACK" strokeType="INSIDE" width="228.0" />
    </children>
 </AnchorPane>
