@@ -12,9 +12,9 @@ import javafx.fxml.Initializable;
 /**
  * FXML Controller class
  *
- * @author Marcos
+ * @author Evaristo
  */
-public class PontoRetaController implements Initializable {
+public class InternasController implements Initializable {
 
     /**
      * Initializes the controller class.
