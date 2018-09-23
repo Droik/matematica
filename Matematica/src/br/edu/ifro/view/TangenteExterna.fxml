@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".TangenteExternaController">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller=".TangenteExternaController">
+   <children>
+      <ImageView fitHeight="457.0" fitWidth="723.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/capa2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="339.0" fitWidth="624.0" layoutX="60.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/tangenteexterna.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="95.0" layoutY="34.0" prefHeight="60.0" prefWidth="558.0" text="CIRCUNFERÊNCIA: TANGENTE EXTERNA" textAlignment="CENTER">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="431.0" layoutY="184.0" text="Raio da Circunferência 2">
+         <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="431.0" layoutY="309.0" text="Distância entre elas">
+         <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRaio2" layoutX="431.0" layoutY="210.0" prefHeight="25.0" prefWidth="91.0" />
+      <TextField fx:id="txtRaio1" layoutX="431.0" layoutY="136.0" prefHeight="25.0" prefWidth="91.0" />
+      <TextField fx:id="txtDistancia" layoutX="431.0" layoutY="341.0" prefHeight="25.0" prefWidth="91.0" />
+      <Label layoutX="431.0" layoutY="110.0" text="Raio da Circunferência 1">
+         <font>
+            <Font name="Century Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVoltar" layoutX="574.0" layoutY="341.0" mnemonicParsing="false" onAction="#voltar" prefHeight="25.0" prefWidth="55.0" text="Voltar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>
