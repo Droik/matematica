@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package br.edu.ifro.control;
-
+import br.edu.ifro.model.MenuPrincipal;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
