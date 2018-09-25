@@ -47,6 +47,7 @@ public class MenuPrincipalController implements Initializable {
 
     @FXML
     private void calcular(ActionEvent event) {
+        
     }
 
     @FXML
