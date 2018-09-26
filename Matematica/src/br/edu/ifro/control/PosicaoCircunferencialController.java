@@ -44,6 +44,7 @@ public class PosicaoCircunferencialController implements Initializable {
    public double a1,b1,c1,r1;
    public double a2,b2,c2,r2;
    public double dc1c2,x,y;
+   public double rp,rn;
    /**
     * Initializes the controller class.
     */
@@ -89,12 +90,25 @@ public class PosicaoCircunferencialController implements Initializable {
    
    r1 = r1*-1;
    r2 = r2*-1;
-   
-   if((r1-r2) < (dc1c2) < (r1+r2)){
+   rn = r1 - r2;
+   rp = r1+r2;
+   if((rn) < (dc1c2) && (dc1c2)< (rp)){
        FXMLLoader fxmlLoader = new FXMLLoader();
-       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Secantes.fxml"));
+       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Secante.fxml"));
+       Scene scene = new Scene(fxmlLoader.load());
+       Stage stage = new Stage();
+       stage.setTitle("Secante");
+       stage.setScene(scene);
+        stage.show();
+   }
+       else{
+               
+               }
+       
+    }   
     @FXML
     private void sair(ActionEvent event) {
     }
-    
 }
+    
+
