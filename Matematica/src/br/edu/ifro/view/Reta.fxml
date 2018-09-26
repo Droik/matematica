@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -6,8 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="356.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.control.RetaController">
+<AnchorPane id="AnchorPane" prefHeight="356.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.RetaController">
    <children>
       <ImageView fitHeight="358.0" fitWidth="600.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -18,10 +18,21 @@
       <TextField fx:id="txtX" layoutX="407.0" layoutY="146.0" />
       <TextField fx:id="txtY" layoutX="407.0" layoutY="180.0" />
       <TextField fx:id="txtR" layoutX="407.0" layoutY="215.0" />
-      <TextField fx:id="txtResultado" layoutX="407.0" layoutY="265.0" />
+      <TextField fx:id="txtResultado" layoutX="407.0" layoutY="265.0" onAction="#btnCalcular" />
       <TextField fx:id="txtB" layoutX="407.0" layoutY="72.0" />
       <TextField fx:id="txtA" layoutX="407.0" layoutY="38.0" />
-      <Button fx:id="btnVoltar" layoutX="504.0" layoutY="314.0" mnemonicParsing="false" text="MENU" />
-      <Button fx:id="btnCalcular" layoutX="398.0" layoutY="314.0" mnemonicParsing="false" text="CALCULAR" />
+      <Button fx:id="btnVoltar" layoutX="504.0" layoutY="314.0" mnemonicParsing="false" onAction="#Menu" text="MENU" />
+      <Button fx:id="btnCalcular" layoutX="321.0" layoutY="265.0" mnemonicParsing="false" onAction="#btnCalcular" text="CALCULAR" />
+      <Label layoutX="334.0" layoutY="42.0" text="VALOR DE A" />
+      <Label layoutX="334.0" layoutY="76.0" text="VALOR DE B" />
+      <Label layoutX="334.0" layoutY="110.0" text="VALOR DE C" />
+      <Label layoutX="334.0" layoutY="150.0" text="VALOR DE X" />
+      <Label layoutX="338.0" layoutY="184.0" text="VALOR D Y" />
+      <Label layoutX="335.0" layoutY="219.0" text="VALOR DE R" />
+      <ImageView fitHeight="282.0" fitWidth="296.0" layoutX="25.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/D+R.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

@@ -39,24 +39,15 @@ public class RetaController implements Initializable {
    @FXML
    private Button btnCalcular;
    
-   public double m, m1 , m2, m3 , m4;
-   @FXML
-   private Button txtSair;
+   public double m, m1 , m2, m3 , m4, m5;
  
    @Override
    public void initialize(URL url, ResourceBundle rb) {
        
    }    
-   private void voltar(ActionEvent event) throws IOException {
-       FXMLLoader fxmlLoader = new FXMLLoader();
-       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/MenuPrincipal.fxml"));
-       Scene scene = new Scene(fxmlLoader.load());
-       Stage stage = new Stage();
-       stage.setTitle("Menu Principal");
-       stage.setScene(scene);
-       stage.show();  
-}
-   private void CALCULAR(ActionEvent event){
+ 
+    @FXML
+   private void btnCalcular (ActionEvent event){
        double A = Double.parseDouble(txtA.getText());
        double B = Double.parseDouble(txtB.getText());
        double C = Double.parseDouble(txtC.getText());
@@ -70,23 +61,33 @@ public class RetaController implements Initializable {
        m2 = B;
        m3 = Math.pow(m1 , 2);
        m4 = Math.pow(m2 , 2);
+       m5 = Resultado;
        
-       Resultado = A*X*C+B*Y*R/Math.sqrt(m2 + m4);
+       m5 = A*X*C+B*Y*R/Math.sqrt(m2 + m4);
        
-       if (Resultado < 0){
-           Resultado = Resultado* (-1);
+       if (m5 < 0){
+           m5 = m5* (-1);
        } else {
-           Resultado = Resultado;
+           m5 = m5;
        }
        
        
-       
-   
-       
-   
-       
-      
-       
    }
+
+    private void resultado(ActionEvent event) {
+        
+    }
+
+    @FXML
+    private void Menu(ActionEvent event) throws IOException {
+    FXMLLoader fxmlLoader = new FXMLLoader();
+       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/MenuPrincipal.fxml"));
+       Scene scene = new Scene(fxmlLoader.load());
+       Stage stage = new Stage();
+       stage.setTitle("Menu Principal");
+       stage.setScene(scene);
+       stage.show();  
+    }
+
 
 }

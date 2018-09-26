@@ -153,7 +153,7 @@ public class PosicaoCircunferencialController implements Initializable {
 }
 }   
     @FXML
-    private void sair(ActionEvent event) {
+    private void sair (ActionEvent event) {
     }
 }
     
