@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package br.edu.ifro.control;
-import br.edu.ifro.model.MenuPrincipal;
+import br.edu.ifro.model.PosicaoCircunferencia;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -18,7 +18,7 @@ import javafx.scene.control.TextField;
  *
  * @author Evaristo
  */
-public class MenuPrincipalController implements Initializable {
+public class PosicaoCircunferencialController implements Initializable {
 
     @FXML
     private Button btnCalcular;

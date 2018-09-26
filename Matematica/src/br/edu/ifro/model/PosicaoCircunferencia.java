@@ -9,7 +9,7 @@ package br.edu.ifro.model;
  *
  * @author Marcos
  */
-public class MenuPrincipal {
+public class PosicaoCircunferencia {
 public String txtXC1;
 public String txtYC1;
 public String txtTC1;
