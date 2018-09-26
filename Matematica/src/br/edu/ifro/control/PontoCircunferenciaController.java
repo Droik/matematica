@@ -14,7 +14,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javax.swing.JOptionPane;
 
 /**
  * FXML Controller class
@@ -37,8 +39,6 @@ public class PontoCircunferenciaController implements Initializable {
     private TextField txtB;
     @FXML
     private TextField txtRaio;
-    @FXML
-    private TextField txtresulte;
 
     public TextField getTxtX() {
         return txtX;
@@ -108,30 +108,26 @@ public double m1,m2,m3,m4,m5,m6;
         Double A3 = Double.parseDouble(txtA.getText());
         Double A4 = Double.parseDouble(txtB.getText());
         Double A5 = Double.parseDouble(txtRaio.getText());
-        Double A6 = Double.parseDouble(txtResultado.getText());
-     m1 = Math.pow(A1 , 2);
-     m2 = Math.pow(A2 , 2);
-     m3 = m1 - m2;
-     m4 = Math.pow(A3 , 2);
-     m5 = Math.pow(A4 , 2);
-     m6 = m4 - m5;
-     A6 = m3 + m6;
-     if (A5 > A6){
-          System.out.println("Ponto Interno");
-     }else{
-          if (A5 < A6){
-            System.out.println("Ponto externo");
-     } else {
-                System.out.println("Ponto pertence");
-      }
-     }
+        
+        Double result;
+        
+        double m1 = Math.pow(A1 , 2);
+        double m2 = Math.pow(A2 , 2);
+        double m3 = m1 - m2;
+        double m4 = Math.pow(A3 , 2);
+        double m5 = Math.pow(A4 , 2);
+        double m6 = m4 - m5;
+        
+        result = m3 + m6;
+        String resultado = Double.toString(result);
+        txtResultado.setText(resultado);
+        
+     
    
                 
     }
 
-    @FXML
-    private void resultado(ActionEvent event) {
-    }
+    
     }
   
 

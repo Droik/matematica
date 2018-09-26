@@ -14,6 +14,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -24,11 +25,11 @@ import javafx.stage.Stage;
 public class MenuPrincipalController implements Initializable {
 
     @FXML
-    private Button btnCPC;
+    private Button btnCCPC;
     @FXML
     private Button btnCR;
     @FXML
-    private Button btnCPonto;
+    private Button btnCalcular;
 
     /**
      * Initializes the controller class.
@@ -44,17 +45,34 @@ public class MenuPrincipalController implements Initializable {
         fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/PosicaoCircunferencia.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
-        stage.setTitle("Menu Principal");
+        stage.setTitle("Posição Circunferência");
         stage.setScene(scene);
         stage.show();  
     }
 
     @FXML
-    private void calcularCR(ActionEvent event) {
+    private void calcularCR(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Reta.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Reta");
+        stage.setScene(scene);
+        stage.show();  
     }
 
     @FXML
-    private void calcularCPonto(ActionEvent event) {
+    private void calcular(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/PontoCircunferencia.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Ponto e Circunferência");
+        stage.setScene(scene);
+        stage.show();  
     }
+
+    
+
     
 }

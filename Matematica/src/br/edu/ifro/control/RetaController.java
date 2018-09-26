@@ -55,26 +55,21 @@ public class RetaController implements Initializable {
        double X = Double.parseDouble(txtX.getText());
        double Y = Double.parseDouble(txtY.getText());
        double R = Double.parseDouble(txtR.getText());
-       double Resultado = Double.parseDouble(txtResultado.getText());
-        Mensagens msg = new Mensagens( "Matemática");
        
+        Mensagens msg = new Mensagens( "Matemática");
+       double result;
        m1 = A;
        m2 = B;
        m3 = Math.pow(m1 , 2);
        m4 = Math.pow(m2 , 2);
-       m5 = Resultado;
-       m6 = R;
-       m5 = A*X*C+B*Y*R/Math.sqrt(m2 + m4);
        
-       if (m5 < m6){
-           msg.informacao("Reta Secante");
-       } else {
-        
-           msg.informacao("Reta Externa");
-       }
-       if (m5 == m6){
-           msg.informacao("Reta Tangente");
-       }
+       m6 = R;
+       
+       
+       result =  A*X*C+B*Y*R/Math.sqrt(m2 + m4);
+       String resultado = Double.toString(result);
+       txtResultado.setText(resultado);
+       
        
    }
 
