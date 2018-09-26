@@ -92,7 +92,7 @@ public class PosicaoCircunferencialController implements Initializable {
    r2 = r2*-1;
    rn = r1 - r2;
    rp = r1+r2;
-   if((rn) < (dc1c2) && (dc1c2)< (rp)){
+    if((rn) < (dc1c2) && (dc1c2)< (rp)){
        FXMLLoader fxmlLoader = new FXMLLoader();
        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Secante.fxml"));
        Scene scene = new Scene(fxmlLoader.load());
@@ -100,10 +100,57 @@ public class PosicaoCircunferencialController implements Initializable {
        stage.setTitle("Secante");
        stage.setScene(scene);
         stage.show();
-   }
-       else{
+    }else{
+    if(dc1c2 = 0){
+       FXMLLoader fxmlLoader = new FXMLLoader();
+       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/CircunferenciaConcentrica.fxml"));
+       Scene scene = new Scene(fxmlLoader.load());
+       Stage stage = new Stage();
+       stage.setTitle("Circunferencia Concentrica");
+       stage.setScene(scene);
+        stage.show();
+    }else{
+    if((dc1c2) = (rn)){
+       FXMLLoader fxmlLoader = new FXMLLoader();
+       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/TangenteInterna.fxml"));
+       Scene scene = new Scene(fxmlLoader.load());
+       Stage stage = new Stage();
+       stage.setTitle("Tangete Interna");
+       stage.setScene(scene);
+        stage.show();
+    }else{
+    if((dc1c2) = (rp)){
+       FXMLLoader fxmlLoader = new FXMLLoader();
+       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/TangenteExterna.fxml"));
+       Scene scene = new Scene(fxmlLoader.load());
+       Stage stage = new Stage();
+       stage.setTitle("Tangete Externa");
+       stage.setScene(scene);
+       stage.show();      
+    }else{
+    if((dc1c2) > (rp)){
+       FXMLLoader fxmlLoader = new FXMLLoader();
+       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/eExterna.fxml"));
+       Scene scene = new Scene(fxmlLoader.load());
+       Stage stage = new Stage();
+       stage.setTitle("Externa");
+       stage.setScene(scene);
+       stage.show();
+    }else{
+    if((dc1c2) < (rp)){
+       FXMLLoader fxmlLoader = new FXMLLoader();
+       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Interna.fxml"));
+       Scene scene = new Scene(fxmlLoader.load());
+       Stage stage = new Stage();
+       stage.setTitle(" Interna");
+       stage.setScene(scene);
+       stage.show();      
+       
+      }
+            
+}
                
-               }
+}
        
     }   
     @FXML

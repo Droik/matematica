@@ -41,10 +41,10 @@ public class CircunferenciaConcentricaController implements Initializable {
     @FXML
     private void voltar(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/MenuPrincipal.fxml"));
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/PosicaoCircunferencia.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
-        stage.setTitle("Menu Principal");
+        stage.setTitle("Posicao Circunferencial");
         stage.setScene(scene);
         stage.show();  
 }
