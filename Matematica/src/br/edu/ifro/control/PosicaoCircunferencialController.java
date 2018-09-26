@@ -65,8 +65,8 @@ public class PosicaoCircunferencialController implements Initializable {
    a1 = xc1/-2;
    b1 = yc1/-2;
    c1 = tc1;
-   a1 = a1*2;
-   b1 = b1*2;
+   a1 = a1*a1;
+   b1 = b1*b1;
    r1 = a1 + b1;
    r1 = (c1)-r1;
    r1 = (double)Math.pow(r1,2);
@@ -81,7 +81,7 @@ public class PosicaoCircunferencialController implements Initializable {
    r2 = (double)Math.pow(r2,2);
    
    x = (a1)-(a2);
-   x = (x)*2;
+   x = (x)*(x);
    y = (b1)-(b2);
    y = (y)*(y);
    
@@ -151,8 +151,7 @@ public class PosicaoCircunferencialController implements Initializable {
 }
                
 }
-       
-    }   
+}   
     @FXML
     private void sair(ActionEvent event) {
     }
