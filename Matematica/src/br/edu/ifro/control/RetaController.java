@@ -1,8 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+* To change this license header, choose License Headers in Project Properties.
+* To change this template file, choose Tools | Templates
+* and open the template in the editor.
+*/
 package br.edu.ifro.control;
 
 import java.io.IOException;
@@ -20,52 +20,73 @@ import javafx.stage.Stage;
 
 public class RetaController implements Initializable {
 
-    @FXML
-    private TextField txtC;
-    @FXML
-    private TextField txtX;
-    @FXML
-    private TextField txtY;
-    @FXML
-    private TextField txtR;
-    @FXML
-    private TextField txtResultado;
-    @FXML
-    private TextField txtB;
-    @FXML
-    private TextField txtA;
-    @FXML
-    private Button btnVoltar;
-    @FXML
-    private Button btnCalcular;
-
-  
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        
-    }    
-    private void voltar(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/MenuPrincipal.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("Menu Principal");
-        stage.setScene(scene);
-        stage.show();  
-}
-    private void calcular(ActionEvent event) throws IOException{
-        double xc1 = Double.parseDouble(txtA.getText());
-        double yc1 = Double.parseDouble(txtB.getText());
-        double tc1 = Double.parseDouble(txtC.getText());
-        double tc2 = Double.parseDouble(txtX.getText());
-        double xc2 = Double.parseDouble(txtY.getText());
-        double yc2 = Double.parseDouble(txtR.getText());
-    
-        
-    
-        
+   @FXML
+   private TextField txtC;
+   @FXML
+   private TextField txtX;
+   @FXML
+   private TextField txtY;
+   @FXML
+   private TextField txtR;
+   @FXML
+   private TextField txtResultado;
+   @FXML
+   private TextField txtB;
+   @FXML
+   private TextField txtA;
+   @FXML
+   private Button btnVoltar;
+   @FXML
+   private Button btnCalcular;
+   
+   public double m, m1 , m2, m3 , m4;
+   @FXML
+   private Button txtSair;
+ 
+   @Override
+   public void initialize(URL url, ResourceBundle rb) {
        
-        
-    }
+   }    
+   private void voltar(ActionEvent event) throws IOException {
+       FXMLLoader fxmlLoader = new FXMLLoader();
+       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/MenuPrincipal.fxml"));
+       Scene scene = new Scene(fxmlLoader.load());
+       Stage stage = new Stage();
+       stage.setTitle("Menu Principal");
+       stage.setScene(scene);
+       stage.show();  
+}
+   private void CALCULAR(ActionEvent event){
+       double A = Double.parseDouble(txtA.getText());
+       double B = Double.parseDouble(txtB.getText());
+       double C = Double.parseDouble(txtC.getText());
+       double X = Double.parseDouble(txtX.getText());
+       double Y = Double.parseDouble(txtY.getText());
+       double R = Double.parseDouble(txtR.getText());
+       double Resultado = Double.parseDouble(txtResultado.getText());
+       
+       
+       m1 = A;
+       m2 = B;
+       m3 = Math.pow(m1 , 2);
+       m4 = Math.pow(m2 , 2);
+       
+       Resultado = A*X*C+B*Y*R/Math.sqrt(m2 + m4);
+       
+       if (Resultado < 0){
+           Resultado = Resultado* (-1);
+       } else {
+           Resultado = Resultado;
+       }
+       
+       
+       
+   
+       
+   
+       
+      
+       
+   }
 
 }
