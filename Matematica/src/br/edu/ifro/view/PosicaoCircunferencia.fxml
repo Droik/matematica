@@ -27,11 +27,11 @@
             <Image url="@../../../../img/menu1.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="btnCalcular" layoutX="590.0" layoutY="372.0" mnemonicParsing="false" onAction="#calcular" prefHeight="30.0" prefWidth="81.0" text="Calcular">
+      <Button fx:id="btnCalcular" layoutX="590.0" layoutY="372.0" mnemonicParsing="false"  prefHeight="30.0" prefWidth="81.0" text="Calcular">
          <font>
             <Font name="System Bold" size="14.0" />
          </font></Button>
-      <Button fx:id="btnSair" layoutX="518.0" layoutY="372.0" mnemonicParsing="false" onAction="#sair" prefHeight="30.0" prefWidth="58.0" text="Sair">
+      <Button fx:id="btnSair" layoutX="518.0" layoutY="372.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="58.0" text="Sair">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

@@ -4,6 +4,7 @@
 * and open the template in the editor.
 */
 package br.edu.ifro.control;
+import br.edu.ifro.model.Mensagens;
 import br.edu.ifro.model.PosicaoCircunferencia;
 import java.io.IOException;
 import java.net.URL;
@@ -61,7 +62,7 @@ public class PosicaoCircunferencialController implements Initializable {
    double tc2 = Double.parseDouble(txtTC2.getText());
    double xc2 = Double.parseDouble(txtXC2.getText());
    double yc2 = Double.parseDouble(txtYC2.getText());
-   
+   Mensagens msg = new Mensagens( "Matemática");
    a1 = xc1/-2;
    b1 = yc1/-2;
    c1 = tc1;
@@ -100,8 +101,9 @@ public class PosicaoCircunferencialController implements Initializable {
        stage.setTitle("Secante");
        stage.setScene(scene);
         stage.show();
+        msg.informacao("Secante");
     }else{
-    if(dc1c2 = 0){
+    if(dc1c2 == 0){
        FXMLLoader fxmlLoader = new FXMLLoader();
        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/CircunferenciaConcentrica.fxml"));
        Scene scene = new Scene(fxmlLoader.load());
@@ -109,8 +111,9 @@ public class PosicaoCircunferencialController implements Initializable {
        stage.setTitle("Circunferencia Concentrica");
        stage.setScene(scene);
         stage.show();
+         msg.informacao("Circunferencia Concentrica");
     }else{
-    if((dc1c2) = (rn)){
+    if((dc1c2) == (rn)){
        FXMLLoader fxmlLoader = new FXMLLoader();
        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/TangenteInterna.fxml"));
        Scene scene = new Scene(fxmlLoader.load());
@@ -119,14 +122,15 @@ public class PosicaoCircunferencialController implements Initializable {
        stage.setScene(scene);
         stage.show();
     }else{
-    if((dc1c2) = (rp)){
+    if((dc1c2) == (rp)){
        FXMLLoader fxmlLoader = new FXMLLoader();
        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/TangenteExterna.fxml"));
        Scene scene = new Scene(fxmlLoader.load());
        Stage stage = new Stage();
        stage.setTitle("Tangete Externa");
        stage.setScene(scene);
-       stage.show();      
+       stage.show();   
+       msg.informacao("Tangete Externa");
     }else{
     if((dc1c2) > (rp)){
        FXMLLoader fxmlLoader = new FXMLLoader();
@@ -136,6 +140,7 @@ public class PosicaoCircunferencialController implements Initializable {
        stage.setTitle("Externa");
        stage.setScene(scene);
        stage.show();
+       msg.informacao("Externa");
     }else{
     if((dc1c2) < (rp)){
        FXMLLoader fxmlLoader = new FXMLLoader();
@@ -144,17 +149,24 @@ public class PosicaoCircunferencialController implements Initializable {
        Stage stage = new Stage();
        stage.setTitle(" Interna");
        stage.setScene(scene);
-       stage.show();      
+       stage.show(); 
+       msg.informacao("Interna");
        
       }
             
 }
                
-}
-}   
-    @FXML
-    private void sair (ActionEvent event) {
     }
+    }
+    }
+    }
+   }
 }
-    
 
+    
+    
+    
+    
+   
+
+    

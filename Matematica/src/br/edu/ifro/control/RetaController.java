@@ -5,6 +5,7 @@
 */
 package br.edu.ifro.control;
 
+import br.edu.ifro.model.Mensagens;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -39,7 +40,7 @@ public class RetaController implements Initializable {
    @FXML
    private Button btnCalcular;
    
-   public double m, m1 , m2, m3 , m4, m5;
+   public double m, m1 , m2, m3 , m4, m5, m6;
  
    @Override
    public void initialize(URL url, ResourceBundle rb) {
@@ -55,22 +56,25 @@ public class RetaController implements Initializable {
        double Y = Double.parseDouble(txtY.getText());
        double R = Double.parseDouble(txtR.getText());
        double Resultado = Double.parseDouble(txtResultado.getText());
-       
+        Mensagens msg = new Mensagens( "Matemática");
        
        m1 = A;
        m2 = B;
        m3 = Math.pow(m1 , 2);
        m4 = Math.pow(m2 , 2);
        m5 = Resultado;
-       
+       m6 = R;
        m5 = A*X*C+B*Y*R/Math.sqrt(m2 + m4);
        
-       if (m5 < 0){
-           m5 = m5* (-1);
+       if (m5 < m6){
+           msg.informacao("Reta Secante");
        } else {
-           m5 = m5;
+        
+           msg.informacao("Reta Externa");
        }
-       
+       if (m5 == m6){
+           msg.informacao("Reta Tangente");
+       }
        
    }
 
