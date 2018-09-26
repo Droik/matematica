@@ -37,7 +37,8 @@ public class PosicaoCircunferencialController implements Initializable {
     @FXML
     private TextField txtXC2;
   
-
+    public double a1,b1,c1,r1;
+    public double a2,b2,c2,r2;
     /**
      * Initializes the controller class.
      */
@@ -55,7 +56,23 @@ public class PosicaoCircunferencialController implements Initializable {
     double xc2 = Double.parseDouble(txtXC2.getText());
     double yc2 = Double.parseDouble(txtYC2.getText());
     
+    a1 = xc1/-2;
+    b1 = yc1/-2;
+    c1 = tc1;
+    a1 = a1*2;
+    b1 = b1*2;
+    r1 = a1 + b1;
+    r1 = (c1)-r1;
+    r1 = (float)Math.pow(r1);
     
+    a2 = xc2/-2;
+    b2 = yc2/-2;
+    c2 = tc2;
+    a2 = a2*2;
+    b2 = b2*2;
+    r2 = a2 + b2;
+    r2 = (c2)-r2;
+    r2 = (float)Math.pow(r2);
        }
 
     @FXML
