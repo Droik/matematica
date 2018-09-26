@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="356.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.control.RetaController">
+   <children>
+      <ImageView fitHeight="358.0" fitWidth="600.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/capa2.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtC" layoutX="407.0" layoutY="106.0" />
+      <TextField fx:id="txtX" layoutX="407.0" layoutY="146.0" />
+      <TextField fx:id="txtY" layoutX="407.0" layoutY="180.0" />
+      <TextField fx:id="txtR" layoutX="407.0" layoutY="215.0" />
+      <TextField fx:id="txtResultado" layoutX="407.0" layoutY="265.0" />
+      <TextField fx:id="txtB" layoutX="407.0" layoutY="72.0" />
+      <TextField fx:id="txtA" layoutX="407.0" layoutY="38.0" />
+      <Button fx:id="btnVoltar" layoutX="504.0" layoutY="314.0" mnemonicParsing="false" text="MENU" />
+      <Button fx:id="btnCalcular" layoutX="398.0" layoutY="314.0" mnemonicParsing="false" text="CALCULAR" />
+   </children>
+</AnchorPane>

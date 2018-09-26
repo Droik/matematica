@@ -17,28 +17,33 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-/**
- * FXML Controller class
- *
- * @author Evaristo
- */
-public class CircunferenciaConcentricaController implements Initializable {
+
+public class RetaController implements Initializable {
 
     @FXML
-    private TextField txtDistancia;
+    private TextField txtC;
     @FXML
-    private TextField txtRaio1;
+    private TextField txtX;
     @FXML
-    private TextField txtRaio2;
+    private TextField txtY;
+    @FXML
+    private TextField txtR;
+    @FXML
+    private TextField txtResultado;
+    @FXML
+    private TextField txtB;
+    @FXML
+    private TextField txtA;
     @FXML
     private Button btnVoltar;
+    @FXML
+    private Button btnCalcular;
 
-    
+  
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-      
+        
     }    
-    @FXML
     private void voltar(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/MenuPrincipal.fxml"));
@@ -48,4 +53,19 @@ public class CircunferenciaConcentricaController implements Initializable {
         stage.setScene(scene);
         stage.show();  
 }
+    private void calcular(ActionEvent event) throws IOException{
+        double xc1 = Double.parseDouble(txtA.getText());
+        double yc1 = Double.parseDouble(txtB.getText());
+        double tc1 = Double.parseDouble(txtC.getText());
+        double tc2 = Double.parseDouble(txtX.getText());
+        double xc2 = Double.parseDouble(txtY.getText());
+        double yc2 = Double.parseDouble(txtR.getText());
+    
+        
+    
+        
+       
+        
+    }
+
 }
