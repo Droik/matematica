@@ -70,6 +70,16 @@ public class RetaController implements Initializable {
        String resultado = Double.toString(result);
        txtResultado.setText(resultado);
        
+       if (m5 < result){
+           msg.informacao("Reta Secante");
+       } else {
+        
+           msg.informacao("Reta Externa");
+       }
+       if (m5 == result){
+           msg.informacao("Reta Tangente");
+       }
+       
        
    }
 

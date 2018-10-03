@@ -13,6 +13,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -122,6 +123,27 @@ public double m1,m2,m3,m4,m5,m6;
         String resultado = Double.toString(result);
         txtResultado.setText(resultado);
         
+        if (A5 > result){
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText("Ponto Interno: " + resultado);
+                alert.setTitle("Aviso");
+                alert.show();
+            
+            }else{
+          if (A5 < result){
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText("Ponto Externo: " + resultado);
+                alert.setTitle("Aviso");
+                alert.show();
+             
+            } else {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText("Ponto Pertence: " + resultado);
+                alert.setTitle("Aviso");
+                alert.show();
+              
+      }
+     }
      
    
                 
