@@ -22,7 +22,8 @@ public class TangenteExternaController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        RetaController reta = new RetaController();
+        
     }    
     
 }
