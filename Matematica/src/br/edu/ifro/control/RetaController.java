@@ -40,7 +40,7 @@ public class RetaController implements Initializable {
    @FXML
    private Button btnCalcular;
    
-   public double m, m1 , m2, m3 , m4, m5, m6;
+   public double m, m1 , m2, m3 , m4, m5, m6, result;
  
    @Override
    public void initialize(URL url, ResourceBundle rb) {
@@ -57,7 +57,7 @@ public class RetaController implements Initializable {
        double R = Double.parseDouble(txtR.getText());
        
         Mensagens msg = new Mensagens( "Matemática");
-       double result;
+       
        m1 = A;
        m2 = B;
        m3 = Math.pow(m1 , 2);

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="br.edu.ifro.control.PosicaoCircunferencialController">
+   <children>
+      <ImageView fitHeight="497.0" fitWidth="741.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/lousa-matematica.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="422.0" layoutX="42.0" layoutY="40.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
+      <Label layoutX="90.0" layoutY="40.0" prefHeight="60.0" prefWidth="574.0" text="POSIÇÕES ENTRE DUAS CIRCUNFERÊNCIAS " textAlignment="CENTER">
+         <font>
+            <Font name="Cooper Black" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="369.0" fitWidth="668.0" layoutX="47.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/menu1.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnCalcular" layoutX="600.0" layoutY="382.0" mnemonicParsing="false" onAction="#cal" prefHeight="30.0" prefWidth="81.0" text="Calcular">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSair" layoutX="528.0" layoutY="382.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="58.0" text="Sair">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="465.0" layoutY="238.0" text="Circunferência 1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="465.0" layoutY="306.0" text="Circunferência 2">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtXC1" layoutX="468.0" layoutY="268.0" prefHeight="25.0" prefWidth="38.0" />
+      <TextField fx:id="txxtYC1" layoutX="542.0" layoutY="268.0" prefHeight="25.0" prefWidth="38.0" />
+      <TextField fx:id="txtTC1" layoutX="615.0" layoutY="268.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="511.0" layoutY="268.0" prefHeight="25.0" prefWidth="17.0" text="X">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="586.0" layoutY="268.0" prefHeight="25.0" prefWidth="17.0" text="Y">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="586.0" layoutY="334.0" prefHeight="25.0" prefWidth="17.0" text="Y">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="511.0" layoutY="334.0" prefHeight="25.0" prefWidth="17.0" text="X">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTC2" layoutX="615.0" layoutY="334.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="txxtYC2" layoutX="542.0" layoutY="334.0" prefHeight="25.0" prefWidth="38.0" />
+      <TextField fx:id="txtXC2" layoutX="468.0" layoutY="334.0" prefHeight="25.0" prefWidth="38.0" />
+   </children>
+</AnchorPane>

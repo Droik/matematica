@@ -25,11 +25,21 @@ import javafx.stage.Stage;
 public class MenuPrincipalController implements Initializable {
 
     @FXML
-    private Button btnCCPC;
-    @FXML
-    private Button btnCR;
-    @FXML
     private Button btnCalcular;
+    @FXML
+    private Button btnSair;
+    @FXML
+    private TextField txtXC1;
+    @FXML
+    private TextField txxtYC1;
+    @FXML
+    private TextField txtTC1;
+    @FXML
+    private TextField txtTC2;
+    @FXML
+    private TextField txxtYC2;
+    @FXML
+    private TextField txtXC2;
 
     /**
      * Initializes the controller class.
@@ -39,8 +49,7 @@ public class MenuPrincipalController implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void calcularPC(ActionEvent event) throws IOException {
+    public void calcularPC(ActionEvent event) throws IOException {
          FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/PosicaoCircunferencia.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -50,8 +59,7 @@ public class MenuPrincipalController implements Initializable {
         stage.show();  
     }
 
-    @FXML
-    private void calcularCR(ActionEvent event) throws IOException {
+    public void calcularCR(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Reta.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -61,8 +69,7 @@ public class MenuPrincipalController implements Initializable {
         stage.show();  
     }
 
-    @FXML
-    private void calcular(ActionEvent event) throws IOException {
+    public void calcular(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/PontoCircunferencia.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -71,6 +78,8 @@ public class MenuPrincipalController implements Initializable {
         stage.setScene(scene);
         stage.show();  
     }
+
+    
 
     
 
