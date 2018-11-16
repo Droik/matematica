@@ -61,12 +61,12 @@ public class PosicaoCircunferencialController implements Initializable {
     @FXML
     private void cal(ActionEvent event) throws IOException {
         double xc1 = Double.parseDouble(txtXC1.getText());
-   double yc1 = Double.parseDouble(txtYC1.getText());
-   double tc1 = Double.parseDouble(txtTC1.getText());
-   double tc2 = Double.parseDouble(txtTC2.getText());
-   double xc2 = Double.parseDouble(txtXC2.getText());
-   double yc2 = Double.parseDouble(txtYC2.getText());
-   Mensagens msg = new Mensagens( "Matemática");
+        double yc1 = Double.parseDouble(txxtYC1.getText());
+        double tc1 = Double.parseDouble(txtTC1.getText());
+        double tc2 = Double.parseDouble(txtTC2.getText());
+        double xc2 = Double.parseDouble(txtXC2.getText());
+        double yc2 = Double.parseDouble(txxtYC2.getText());
+        Mensagens msg = new Mensagens("Matemática");
    a1 = xc1/-2;
    b1 = yc1/-2;
    c1 = tc1;
@@ -117,6 +117,8 @@ public class PosicaoCircunferencialController implements Initializable {
        stage.setScene(scene);
         stage.show();
          msg.informacao("Circunferencia Concentrica");
+       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+       stage1.close();
     }else{
     if((dc1c2) == (rn)){
        FXMLLoader fxmlLoader = new FXMLLoader();
@@ -125,7 +127,9 @@ public class PosicaoCircunferencialController implements Initializable {
        Stage stage = new Stage();
        stage.setTitle("Tangete Interna");
        stage.setScene(scene);
-        stage.show();
+       stage.show();
+       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+       stage1.close();
     }else{
     if((dc1c2) == (rp)){
        FXMLLoader fxmlLoader = new FXMLLoader();
@@ -136,26 +140,33 @@ public class PosicaoCircunferencialController implements Initializable {
        stage.setScene(scene);
        stage.show();   
        msg.informacao("Tangete Externa");
+       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+       stage1.close();
     }else{
     if((dc1c2) > (rp)){
        FXMLLoader fxmlLoader = new FXMLLoader();
-       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/eExterna.fxml"));
+       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Externa.fxml"));
        Scene scene = new Scene(fxmlLoader.load());
        Stage stage = new Stage();
        stage.setTitle("Externa");
        stage.setScene(scene);
        stage.show();
        msg.informacao("Externa");
+       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+       stage1.close();
     }else{
     if((dc1c2) < (rp)){
        FXMLLoader fxmlLoader = new FXMLLoader();
-       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Interna.fxml"));
+       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Internas.fxml"));
        Scene scene = new Scene(fxmlLoader.load());
        Stage stage = new Stage();
        stage.setTitle(" Interna");
        stage.setScene(scene);
        stage.show(); 
        msg.informacao("Interna");
+       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+       stage1.close();
+       
        
       }
             

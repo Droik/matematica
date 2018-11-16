@@ -27,19 +27,9 @@ public class MenuPrincipalController implements Initializable {
     @FXML
     private Button btnCalcular;
     @FXML
-    private Button btnSair;
+    private Button btnCCPC;
     @FXML
-    private TextField txtXC1;
-    @FXML
-    private TextField txxtYC1;
-    @FXML
-    private TextField txtTC1;
-    @FXML
-    private TextField txtTC2;
-    @FXML
-    private TextField txxtYC2;
-    @FXML
-    private TextField txtXC2;
+    private Button btnCR;
 
     /**
      * Initializes the controller class.
@@ -49,16 +39,9 @@ public class MenuPrincipalController implements Initializable {
         // TODO
     }    
 
-    public void calcularPC(ActionEvent event) throws IOException {
-         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/PosicaoCircunferencia.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("Posição Circunferência");
-        stage.setScene(scene);
-        stage.show();  
-    }
+    
 
+    @FXML
     public void calcularCR(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Reta.fxml"));
@@ -66,9 +49,12 @@ public class MenuPrincipalController implements Initializable {
         Stage stage = new Stage();
         stage.setTitle("Reta");
         stage.setScene(scene);
-        stage.show();  
+        stage.show(); 
+       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+       stage1.close();
     }
 
+    @FXML
     public void calcular(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/PontoCircunferencia.fxml"));
@@ -76,7 +62,22 @@ public class MenuPrincipalController implements Initializable {
         Stage stage = new Stage();
         stage.setTitle("Ponto e Circunferência");
         stage.setScene(scene);
+        stage.show();
+        Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+        stage1.close();
+    }
+
+    @FXML
+    private void CalPC(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/PosicaoCircunferencial.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Posição Circunferência");
+        stage.setScene(scene);
         stage.show();  
+        Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+        stage1.close();
     }
 
     

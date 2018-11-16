@@ -46,5 +46,8 @@ public class ExternaController implements Initializable {
         stage.show();  
     }
  
-    
+    public void teste(){
+        PosicaoCircunferencialController pc = new PosicaoCircunferencialController();
+        
+    }
 }

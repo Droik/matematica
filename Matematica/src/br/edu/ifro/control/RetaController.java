@@ -1,8 +1,4 @@
-/*
-* To change this license header, choose License Headers in Project Properties.
-* To change this template file, choose Tools | Templates
-* and open the template in the editor.
-*/
+
 package br.edu.ifro.control;
 
 import br.edu.ifro.model.Mensagens;
@@ -67,8 +63,7 @@ public class RetaController implements Initializable {
        
        
        result =  A*X*C+B*Y*R/Math.sqrt(m2 + m4);
-       String resultado = Double.toString(result);
-       txtResultado.setText(resultado);
+       
        
        if (m5 < result){
            msg.informacao("Reta Secante");
@@ -79,7 +74,8 @@ public class RetaController implements Initializable {
        if (m5 == result){
            msg.informacao("Reta Tangente");
        }
-       
+       String resultado = Double.toString(result);
+       txtResultado.setText(resultado);
        
    }
 

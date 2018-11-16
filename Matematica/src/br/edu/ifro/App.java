@@ -25,6 +25,7 @@ public class App extends Application {
         
         stage.setScene(scene);
         stage.setTitle("Menu Principal");
+        
         stage.show();
     }
 

@@ -8,63 +8,63 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.MenuPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="759.0" prefWidth="1132.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.MenuPrincipalController">
    <children>
-      <ImageView fitHeight="513.0" fitWidth="756.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="781.0" fitWidth="1166.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../img/lousa-matematica.jpg" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="161.0" layoutX="51.0" layoutY="321.0" stroke="TRANSPARENT" strokeType="INSIDE" width="679.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="161.0" layoutX="253.0" layoutY="169.0" stroke="TRANSPARENT" strokeType="INSIDE" width="477.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="161.0" layoutX="51.0" layoutY="29.0" stroke="TRANSPARENT" strokeType="INSIDE" width="509.0" />
-      <ImageView fitHeight="120.0" fitWidth="164.0" layoutX="201.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="174.0" layoutX="99.0" layoutY="433.0" stroke="TRANSPARENT" strokeType="INSIDE" width="679.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="161.0" layoutX="301.0" layoutY="281.0" stroke="TRANSPARENT" strokeType="INSIDE" width="703.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="161.0" layoutX="99.0" layoutY="141.0" stroke="TRANSPARENT" strokeType="INSIDE" width="815.0" />
+      <ImageView fitHeight="120.0" fitWidth="164.0" layoutX="479.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../img/posicoes-relativas-duas-circunferencias4.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="94.0" fitWidth="137.0" layoutX="68.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="94.0" fitWidth="137.0" layoutX="325.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../img/imagem.jpg" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="135.0" layoutX="61.0" layoutY="327.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.8" width="649.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="135.0" layoutX="62.0" layoutY="43.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.8" width="487.0" />
-      <Button fx:id="btnCCPC" layoutX="462.0" layoutY="141.0" mnemonicParsing="false" onAction="#calcularPC" text="Calcular">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="145.0" layoutX="109.0" layoutY="443.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.8" width="649.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="135.0" layoutX="111.0" layoutY="155.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.8" width="792.0" />
+      <Button fx:id="btnCCPC" layoutX="785.0" layoutY="254.0" mnemonicParsing="false" onAction="#CalPC" text="Calcular">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Label layoutX="69.0" layoutY="28.0" prefHeight="60.0" prefWidth="477.0" text="POSIÇÕES ENTRE DUAS CIRCUNFERÊNCIAS " textAlignment="CENTER">
+      <Label layoutX="117.0" layoutY="140.0" prefHeight="60.0" prefWidth="477.0" text="POSIÇÕES ENTRE DUAS CIRCUNFERÊNCIAS " textAlignment="CENTER">
          <font>
             <Font name="Cooper Black" size="20.0" />
          </font>
       </Label>
-      <Button fx:id="btnCR" layoutX="625.0" layoutY="280.0" mnemonicParsing="false" onAction="#calcularCR" text="Calcular">
+      <Button fx:id="btnCR" layoutX="914.0" layoutY="401.0" mnemonicParsing="false" onAction="#calcularCR" text="Calcular">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <ImageView fitHeight="121.0" fitWidth="279.0" layoutX="277.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="121.0" fitWidth="279.0" layoutX="546.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../img/g_circreta.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="351.0" layoutY="172.0" prefHeight="60.0" prefWidth="291.0" text="CIRCUNFERÊNCIA E RETA" textAlignment="CENTER" textFill="#0d0d0d">
+      <Label layoutX="399.0" layoutY="284.0" prefHeight="60.0" prefWidth="291.0" text="CIRCUNFERÊNCIA E RETA" textAlignment="CENTER" textFill="#0d0d0d">
          <font>
             <Font name="Cooper Black" size="20.0" />
          </font>
       </Label>
-      <ImageView fitHeight="135.0" fitWidth="276.0" layoutX="72.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="135.0" fitWidth="276.0" layoutX="117.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../img/g_circponto.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="253.0" layoutY="319.0" prefHeight="60.0" prefWidth="309.0" text="PONTO E CIRCUNFERÊNCIA " textAlignment="CENTER">
+      <Label layoutX="301.0" layoutY="431.0" prefHeight="60.0" prefWidth="309.0" text="PONTO E CIRCUNFERÊNCIA " textAlignment="CENTER">
          <font>
             <Font name="Cooper Black" size="20.0" />
          </font>
       </Label>
-      <Button fx:id="btnCalcular" layoutX="629.0" layoutY="422.0" mnemonicParsing="false" onAction="#calcular" text="Calcular" />
+      <Button fx:id="btnCalcular" layoutX="677.0" layoutY="534.0" mnemonicParsing="false" onAction="#calcular" text="Calcular" />
    </children>
 </AnchorPane>
