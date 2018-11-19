@@ -32,6 +32,8 @@ public class CircunferenciaConcentricaController implements Initializable {
     private TextField txtRaio2;
     @FXML
     private Button btnVoltar;
+    @FXML
+    private Button btnCalcular;
 
     
     @Override
@@ -48,4 +50,17 @@ public class CircunferenciaConcentricaController implements Initializable {
         stage.setScene(scene);
         stage.show();  
 }
+
+    @FXML
+    private void calcular(ActionEvent event) {
+    double x1 = Double.parseDouble(txtRaio1.getText());
+    double x2 = Double.parseDouble(txtRaio2.getText());
+    double Result;
+    Result = x1+x2;
+        
+    String resultado = Double.toString(Result);
+    txtDistancia.setText(resultado);      
+    
+    
+    }
 }

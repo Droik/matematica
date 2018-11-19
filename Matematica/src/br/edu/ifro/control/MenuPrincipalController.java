@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
@@ -47,6 +48,7 @@ public class MenuPrincipalController implements Initializable {
         fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Reta.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
+        stage.getIcons().add(new Image("img/lousa-matematica.jpg"));
         stage.setTitle("Reta");
         stage.setScene(scene);
         stage.show(); 
@@ -60,6 +62,7 @@ public class MenuPrincipalController implements Initializable {
         fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/PontoCircunferencia.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
+        stage.getIcons().add(new Image("img/lousa-matematica.jpg"));
         stage.setTitle("Ponto e Circunferência");
         stage.setScene(scene);
         stage.show();
@@ -73,6 +76,7 @@ public class MenuPrincipalController implements Initializable {
         fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/PosicaoCircunferencial.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
+        stage.getIcons().add(new Image("img/lousa-matematica.jpg"));
         stage.setTitle("Posição Circunferência");
         stage.setScene(scene);
         stage.show();  

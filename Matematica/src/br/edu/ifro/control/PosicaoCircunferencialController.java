@@ -14,8 +14,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
@@ -104,8 +106,11 @@ public class PosicaoCircunferencialController implements Initializable {
        Stage stage = new Stage();
        stage.setTitle("Secante");
        stage.setScene(scene);
-        stage.show();
-        msg.informacao("Secante");
+       stage.show();
+       Alert alert = new Alert(Alert.AlertType.ERROR);
+       alert.setHeaderText("Secantes");
+       alert.setTitle("Secantes");
+       alert.show();
         
     }else{
     if(dc1c2 == 0){
@@ -113,59 +118,73 @@ public class PosicaoCircunferencialController implements Initializable {
        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/CircunferenciaConcentrica.fxml"));
        Scene scene = new Scene(fxmlLoader.load());
        Stage stage = new Stage();
+       stage.getIcons().add(new Image("img/lousa-matematica.jpg"));
        stage.setTitle("Circunferencia Concentrica");
        stage.setScene(scene);
-        stage.show();
-         msg.informacao("Circunferencia Concentrica");
-       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
-       stage1.close();
+       stage.show();
+       Alert alert = new Alert(Alert.AlertType.ERROR);
+       alert.setHeaderText("Circunferencia Concentrica");
+       alert.setTitle("Circuferencia");
+       alert.show();
+       
     }else{
     if((dc1c2) == (rn)){
        FXMLLoader fxmlLoader = new FXMLLoader();
        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/TangenteInterna.fxml"));
        Scene scene = new Scene(fxmlLoader.load());
        Stage stage = new Stage();
+       stage.getIcons().add(new Image("img/lousa-matematica.jpg"));
        stage.setTitle("Tangete Interna");
        stage.setScene(scene);
        stage.show();
-       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
-       stage1.close();
+       Alert alert = new Alert(Alert.AlertType.ERROR);
+       alert.setHeaderText("Tangente Interna");
+       alert.setTitle("Tangente");
+       alert.show();
     }else{
     if((dc1c2) == (rp)){
        FXMLLoader fxmlLoader = new FXMLLoader();
        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/TangenteExterna.fxml"));
        Scene scene = new Scene(fxmlLoader.load());
        Stage stage = new Stage();
+       stage.getIcons().add(new Image("img/lousa-matematica.jpg"));
        stage.setTitle("Tangete Externa");
        stage.setScene(scene);
        stage.show();   
-       msg.informacao("Tangete Externa");
-       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
-       stage1.close();
+       Alert alert = new Alert(Alert.AlertType.ERROR);
+       alert.setHeaderText("Tangente Externa!");
+       alert.setTitle("Tangente");
+       alert.show();
+       
     }else{
     if((dc1c2) > (rp)){
        FXMLLoader fxmlLoader = new FXMLLoader();
        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Externa.fxml"));
        Scene scene = new Scene(fxmlLoader.load());
        Stage stage = new Stage();
+       stage.getIcons().add(new Image("img/lousa-matematica.jpg"));
        stage.setTitle("Externa");
        stage.setScene(scene);
        stage.show();
-       msg.informacao("Externa");
-       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
-       stage1.close();
+       Alert alert = new Alert(Alert.AlertType.ERROR);
+       alert.setHeaderText("Externa!");
+       alert.setTitle("Externa");
+       alert.show();
+       
     }else{
     if((dc1c2) < (rp)){
        FXMLLoader fxmlLoader = new FXMLLoader();
        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Internas.fxml"));
        Scene scene = new Scene(fxmlLoader.load());
        Stage stage = new Stage();
-       stage.setTitle(" Interna");
+       stage.getIcons().add(new Image("img/lousa-matematica.jpg"));
+       stage.setTitle("Interna");
        stage.setScene(scene);
        stage.show(); 
-       msg.informacao("Interna");
-       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
-       stage1.close();
+       Alert alert = new Alert(Alert.AlertType.ERROR);
+       alert.setHeaderText("Interna!");
+       alert.setTitle("Interna");
+       alert.show();
        
        
       }

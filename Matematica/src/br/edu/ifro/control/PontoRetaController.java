@@ -40,7 +40,7 @@ public class PontoRetaController implements Initializable {
 
     @FXML
     private void calcular(ActionEvent event) {
-        double A = Double.parseDouble(txtA.getText());
+       double A = Double.parseDouble(txtA.getText());
        double B = Double.parseDouble(txtB.getText());
        double C = Double.parseDouble(txtC.getText());
        double X = Double.parseDouble(txtX.getText());

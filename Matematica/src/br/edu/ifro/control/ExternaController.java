@@ -30,6 +30,8 @@ public class ExternaController implements Initializable {
     private TextField txtRaio2;
     @FXML
     private TextField txtDistancia;
+    @FXML
+    private Button btnCalcular;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -48,6 +50,18 @@ public class ExternaController implements Initializable {
  
     public void teste(){
         PosicaoCircunferencialController pc = new PosicaoCircunferencialController();
+        
+    }
+
+    @FXML
+    private void calcular(ActionEvent event) {
+        double x1 = Double.parseDouble(txtRaio1.getText());
+        double x2 = Double.parseDouble(txtRaio2.getText());
+        double Result;
+        Result = x1+x2;
+        
+        String resultado = Double.toString(Result);
+        txtDistancia.setText(resultado);       
         
     }
 }
