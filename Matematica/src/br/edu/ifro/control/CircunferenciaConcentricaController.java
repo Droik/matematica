@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
@@ -46,9 +47,12 @@ public class CircunferenciaConcentricaController implements Initializable {
         fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/PosicaoCircunferencia.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
+        stage.getIcons().add(new Image("img/lousa-matematica.jpg"));
         stage.setTitle("Posicao Circunferencial");
         stage.setScene(scene);
-        stage.show();  
+        stage.show();
+        Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+       stage1.close();
 }
 
     @FXML

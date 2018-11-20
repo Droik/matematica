@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
@@ -58,13 +59,22 @@ public class PontoRetaController implements Initializable {
        m5 = A*X*C+B*Y*R/Math.sqrt(m2 + m4);
        
        if (m5 < m6){
-           msg.informacao("Reta Secante");
+       Alert alert = new Alert(Alert.AlertType.ERROR);
+       alert.setHeaderText("Reta Secante!");
+       alert.setTitle("Reta");
+       alert.show();
        } else {
-        
-           msg.informacao("Reta Externa");
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+       alert.setHeaderText("Reta Externa!");
+       alert.setTitle("Reta");
+       alert.show();
+           
        }
        if (m5 == m6){
-           msg.informacao("Reta Tangente");
+           Alert alert = new Alert(Alert.AlertType.ERROR);
+       alert.setHeaderText("Reta Tangente!");
+       alert.setTitle("Reta");
+       alert.show();
        }
     }
 

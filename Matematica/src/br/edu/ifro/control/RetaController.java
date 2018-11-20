@@ -10,8 +10,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 
@@ -66,13 +68,23 @@ public class RetaController implements Initializable {
        
        
        if (m5 < result){
-           msg.informacao("Reta Secante");
+           Alert alert = new Alert(Alert.AlertType.ERROR);
+       alert.setHeaderText("Reta Secante!");
+       alert.setTitle("Reta");
+       alert.show();
+           
        } else {
-        
-           msg.informacao("Reta Externa");
+           Alert alert = new Alert(Alert.AlertType.ERROR);
+       alert.setHeaderText("Reta Externa!");
+       alert.setTitle("Reta");
+       alert.show();
+          
        }
        if (m5 == result){
-           msg.informacao("Reta Tangente");
+           Alert alert = new Alert(Alert.AlertType.ERROR);
+       alert.setHeaderText("Reta Tangente!");
+       alert.setTitle("Reta");
+       alert.show();
        }
        String resultado = Double.toString(result);
        txtResultado.setText(resultado);
@@ -85,13 +97,16 @@ public class RetaController implements Initializable {
 
     @FXML
     private void Menu(ActionEvent event) throws IOException {
-    FXMLLoader fxmlLoader = new FXMLLoader();
-       fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/MenuPrincipal.fxml"));
-       Scene scene = new Scene(fxmlLoader.load());
-       Stage stage = new Stage();
-       stage.setTitle("Menu Principal");
-       stage.setScene(scene);
-       stage.show();  
+     FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/MenuPrincipal.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.getIcons().add(new Image("img/lousa-matematica.jpg"));
+        stage.setTitle("Menu Principal");
+        stage.setScene(scene);
+        stage.show();
+        Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+       stage1.close();
     }
 
 

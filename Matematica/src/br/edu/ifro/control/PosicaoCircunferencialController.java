@@ -196,6 +196,20 @@ public class PosicaoCircunferencialController implements Initializable {
     }
     }
     }
+
+    @FXML
+    private void sair(ActionEvent event) throws IOException {
+         FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/MenuPrincipal.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.getIcons().add(new Image("img/lousa-matematica.jpg"));
+        stage.setTitle("Menu Principal");
+        stage.setScene(scene);
+        stage.show();
+        Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+        stage1.close();
+    }
 }
 
     
