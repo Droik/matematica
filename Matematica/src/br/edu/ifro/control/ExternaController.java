@@ -41,7 +41,7 @@ public class ExternaController implements Initializable {
     @FXML
     private void voltar(ActionEvent event) throws IOException {
      FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Menu Principal.fxml"));
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/MenuPrincipal.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.getIcons().add(new Image("img/lousa-matematica.jpg"));

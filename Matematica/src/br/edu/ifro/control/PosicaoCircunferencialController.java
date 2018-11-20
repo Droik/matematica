@@ -111,6 +111,8 @@ public class PosicaoCircunferencialController implements Initializable {
        alert.setHeaderText("Secantes");
        alert.setTitle("Secantes");
        alert.show();
+       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+       stage1.close();
         
     }else{
     if(dc1c2 == 0){
@@ -126,6 +128,8 @@ public class PosicaoCircunferencialController implements Initializable {
        alert.setHeaderText("Circunferencia Concentrica");
        alert.setTitle("Circuferencia");
        alert.show();
+       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+       stage1.close();
        
     }else{
     if((dc1c2) == (rn)){
@@ -141,6 +145,9 @@ public class PosicaoCircunferencialController implements Initializable {
        alert.setHeaderText("Tangente Interna");
        alert.setTitle("Tangente");
        alert.show();
+       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+       stage1.close();
+       
     }else{
     if((dc1c2) == (rp)){
        FXMLLoader fxmlLoader = new FXMLLoader();
@@ -155,6 +162,8 @@ public class PosicaoCircunferencialController implements Initializable {
        alert.setHeaderText("Tangente Externa!");
        alert.setTitle("Tangente");
        alert.show();
+       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+       stage1.close();
        
     }else{
     if((dc1c2) > (rp)){
@@ -170,6 +179,8 @@ public class PosicaoCircunferencialController implements Initializable {
        alert.setHeaderText("Externa!");
        alert.setTitle("Externa");
        alert.show();
+       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+       stage1.close();
        
     }else{
     if((dc1c2) < (rp)){
@@ -185,6 +196,8 @@ public class PosicaoCircunferencialController implements Initializable {
        alert.setHeaderText("Interna!");
        alert.setTitle("Interna");
        alert.show();
+       Stage stage1 = (Stage) btnCalcular.getScene().getWindow();
+       stage1.close();
        
        
       }
